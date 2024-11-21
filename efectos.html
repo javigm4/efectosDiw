@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="efectos.css" />
+</head>
+
+<body>
+  <h1>EFECTOS</h1>
+
+  <button id="btnNormal">Botón Normal</button>
+  <button id="btnOutline">Botón Outline</button>
+  <button id="btnAlerta">Botón Alerta</button>
+
+  <section>
+    <div id="sombra">
+      <h2>Ejemplo de Sombra</h2>
+      <p>Esta tarjeta tiene una sombra.</p>
+    </div>
+    <div id="gradiente">
+      <h2>Ejemplo de Gradiente</h2>
+      <p>Este es un fondo con gradiente.</p>
+    </div>
+  </section>
+
+  <div id="nose">
+    <img src="safariApple-removebg-preview.png" alt="">
+    <img src="appstore-removebg-preview.png" alt="">
+    <img src="fotos.png.png" alt="">
+    <img src="maps.png.png" alt="">
+    <img src="Minecraft_Bedrock_icon.png" alt="">
+  </div>
+</body>
+
+<script>
+  const boton = document.getElementById("btnOutline");
+ 
+
+  boton.addEventListener('click', () => {
+    document.body.style.backgroundColor = 'black';
+
+    const h2 = document.querySelector('#sombra h2');
+    const p = document.querySelector('#sombra p'); 
+
+    h2.style.color = "white";
+    p.style.color = "white";
+  });
+
+
+</script>
+
+</html>
